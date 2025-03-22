@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.naslov {
+    background-color: rgb(172, 172, 97);
+    padding: 2px;
+    text-align: center;
+}
+caption{
+    text-align: center;
+}
+table, td{
+    border: 1px solid rgba(173, 32, 32, 0.808);
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+th {
+    background-color: rgba(173, 32, 32, 0.808);
+    color: white;
+}
+footer {
+    background-color: rgb(178, 224, 239);
+    padding: 0.1px;
+    text-align: center;
+
+}
+.tabele{
+    background-color: rgb(246, 246, 215);
+    padding: 10px;
+}
+.insert {
+    background-color: wheat;
+    padding: 7px;
+}
+select {
+    width: 215px;
+    float: right;
+
+}
+fieldset {
+    width: 50%;
+    margin: auto;
+}
+.desno {
+    float: right;
+    width: 60%;
+    height: 12px;
+}
+.sredinal {
+    margin-left: 34%;
+}
+.sredinad {
+    margin-right: 34%;
+}
