@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koledar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Koledar</h1>
+  </header>
+  <nav>
+    <div class="gumbi">
+      <button data-view="day" class="gumbi1" onclick="window.location.href='dan.html';">Dan</button>
+      <button data-view="week" class="gumbi1" onclick="window.location.href='teden.html';">Teden</button>
+      <button data-view="month" class="gumbi1 active" onclick="window.location.href='index.html';">Mesec</button>
+    </div>
+  </nav>
+  <main>
+    <div class="calendar">
+      <div class="calendar-header">
+        <button class="prev-month">«</button>
+        <span id="month-year">April 2025</span>
+        <button class="next-month">»</button>
+      </div>
+  
+      <div class="calendar-grid">
+        <div class="imeDneva">Pon</div>
+        <div class="imeDneva">Tor</div>
+        <div class="imeDneva">Sre</div>
+        <div class="imeDneva">Čet</div>
+        <div class="imeDneva">Pet</div>
+        <div class="imeDneva">Sob</div>
+        <div class="imeDneva">Ned</div>
+          
+        <div class="day" data-datum="2025-04-00"><span class="date-number"></span></div>
+        <div class="day" data-datum="2025-04-01"><span class="date-number">1</span></div>
+        <div class="day" data-datum="2025-04-02"><span class="date-number">2</span></div>
+        <div class="day" data-datum="2025-04-03"><span class="date-number">3</span></div>
+        <div class="day" data-datum="2025-04-04"><span class="date-number">4</span></div>
+        <div class="day" data-datum="2025-04-05"><span class="date-number">5</span></div>
+        <div class="day" data-datum="2025-04-06"><span class="date-number"><b>6</b></span></div>
+        <div class="day" data-datum="2025-04-07"><span class="date-number">7</span></div>
+        <div class="day" data-datum="2025-04-08"><span class="date-number">8</span></div>
+        <div class="day" data-datum="2025-04-09"><span class="date-number">9</span></div>
+        <div class="day" data-datum="2025-04-10"><span class="date-number">10</span></div>
+        <div class="day" data-datum="2025-04-11"><span class="date-number">11</span></div>
+        <div class="day" data-datum="2025-04-12"><span class="date-number">12</span></div>
+        <div class="day" data-datum="2025-04-13"><span class="date-number"><b>13</b></span></div>
+        <div class="day" data-datum="2025-04-14"><span class="date-number">14</span></div>
+        <div class="day" data-datum="2025-04-15"><span class="date-number">15</span></div>
+        <div class="day" data-datum="2025-04-16"><span class="date-number">16</span></div>
+        <div class="day" data-datum="2025-04-17"><span class="date-number">17</span></div>
+        <div class="day" data-datum="2025-04-18"><span class="date-number">18</span></div>
+        <div class="day" data-datum="2025-04-19"><span class="date-number">19</span></div>
+        <div class="day" data-datum="2025-04-20"><span class="date-number"><b>20</b></span></div>
+        <div class="day" data-datum="2025-04-21"><span class="date-number">21</span></div>
+        <div class="day" data-datum="2025-04-22"><span class="date-number">22</span></div>
+        <div class="day" data-datum="2025-04-23"><span class="date-number">23</span></div>
+        <div class="day" data-datum="2025-04-24"><span class="date-number">24</span></div>
+        <div class="day" data-datum="2025-04-25"><span class="date-number">25</span></div>
+        <div class="day" data-datum="2025-04-26"><span class="date-number">26</span></div>
+        <div class="day" data-datum="2025-04-27"><span class="date-number"><b>27</b></span></div>
+        <div class="day" data-datum="2025-04-28"><span class="date-number">28</span></div>
+        <div class="day" data-datum="2025-04-29"><span class="date-number">29</span></div>
+        <div class="day" data-datum="2025-04-30"><span class="date-number">30</span></div>
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <div class="cas">
+        <h2>Trenutni čas</h2>
+        <p id="trenutni-cas"></p>
+        <p id="trenutni-datum"></p>
+    </div>
+  </aside>
+
+  <article>
+    <h2>Dodaj dogodek</h2>
+    <form id="dogodek-form">
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required>
+      
+        <label for="naslov">Naslov:</label>
+        <input type="text" id="naslov" name="naslov" required>
+      
+        <label for="opis">Opis:</label>
+        <textarea id="opis" name="opis" rows="3" required></textarea>
+      
+        <button type="submit">Dodaj dogodek</button>
+    </form>
+  </article>
+
+  <footer>
+    <p>© 2025 Koledar</p>
+    <p><a href="viri.html">Viri</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

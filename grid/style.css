@@ -81,7 +81,8 @@ in the total width and height of an element. */
     grid-template-columns: 33% 67%;
     grid-template-areas: 
     'header header'
-    'nav article'
+    'nav nav'
+    "article article"
     'aside aside'
     'footer footer';
   }

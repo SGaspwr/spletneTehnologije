@@ -1,0 +1,238 @@
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: bisque;
+    padding: 10px;
+}
+nav {
+    grid-area: nav;
+    padding: 8px;
+    background-color: #f0f0f0;
+    align-items: center;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    padding: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+}
+article {
+    grid-area: article;
+    align-items: center;
+    padding: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-color: #f0f0f0;
+    margin: auto;
+    text-align: center;
+}
+
+
+.gumbi {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .gumbi1 a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.gumbi1 {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.gumbi1:hover {
+    background-color: #ccc;
+}
+  
+.gumbi1.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar {
+    margin: auto;
+    font-family: sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #f3f3f3;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 85px);
+    text-align: center;
+  }
+  
+  .imeDneva {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e0e0e0;
+  }
+  
+  .day {
+    border: 1px solid #ddd;
+    min-height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+  
+  .date-number {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+
+  .date-number.today {
+    background-color: #007bff;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+
+    .cas {
+      background-color: #ffffff;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    #trenutni-cas, #trenutni-datum {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+
+    #dogodek-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      
+      #dogodek-form input,
+      #dogodek-form textarea {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      
+      #dogodek-form button {
+        padding: 8px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      
+      
+      .dogodek {
+        background-color: #f3f3f3;
+        border: 1px solid #ddd;
+        padding: 1px;
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 5px;
+        font-size: 12px;
+        position: relative;
+        margin-top: 2px; 
+    }
+
+
+footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  @media screen and (min-width: 1220px) {
+    body {
+        background-color: #f0f0f0;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+         grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "article main aside"
+            "footer footer footer";
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1220px) {
+    .calendar-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    body {
+        background-color: #f0f0f0;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main aside"
+            "article article"
+            "footer footer";
+    }
+  }
+  
+  @media screen and (max-width: 599px) {
+    .calendar-grid {
+        grid-template-columns: repeat(7, 1fr); 
+    }
+    .day {
+        min-height: 60px; 
+    }
+
+    .calendar-header {
+        font-size: 1rem;  
+    } 
+    body {
+        background-color: #f0f0f0;
+         display: grid;
+         grid-template-columns: 100%;
+         grid-template-areas:
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "article"
+            "footer";
+    }
+  }
+  
+
