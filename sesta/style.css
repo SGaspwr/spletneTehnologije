@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+}
+footer p {
+  margin: 0;
+}
+
+.centered-text {
+  text-align: center;
+}
+.hero-section {
+  background-image: url('slike/b.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  min-height: 200px;
+}

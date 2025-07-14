@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prijava na Dogodek</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Dogodki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domov</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dogodki.html">Dogodki</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+  <div class="container">
+    <h1 class="display-4">Dobrodošli!</h1>
+  </div>
+</header>
+
+  <main class="container my-4">
+    <h2>Prijava na dogodek</h2>
+    <form>
+      <div class="mb-3">
+        <label for="ime" class="form-label">Ime</label>
+        <input type="text" class="form-control" id="ime" required>
+      </div>
+      <div class="mb-3">
+        <label for="priimek" class="form-label">Priimek</label>
+        <input type="text" class="form-control" id="priimek" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Elektronski naslov</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="telefon" class="form-label">Telefonska številka</label>
+        <input type="tel" class="form-control" id="telefon">
+      </div>
+      <div class="mb-3">
+        <label for="karta" class="form-label">Vrsta karte</label>
+        <select class="form-select" id="karta">
+          <option>Navadna</option>
+          <option>Obisk zakulisja</option>
+          <option>VIP</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="datum" class="form-label">Datum dogodka</label>
+        <input type="date" class="form-control" id="datum">
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="pogoji">
+        <label class="form-check-label" for="pogoji">
+          Strinjam se s <a href="#">pogoji uporabe</a>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Pošlji</button>
+    </form>
+  </main>
+
+  <aside class="container my-4">
+    <h2>Prihajajoči dogodki</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="slike/tay.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Koncert Taylor Swift</h5>
+            <p class="card-text">20. 7. 2025 ob 20:00<br>Edinstveni dogodek, ki bo potekal v dvorani Stozice.</p>
+            <a href="index.html" class="btn btn-light">Prijavi se sedaj</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="slike/beatles.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Koncert The Beatles</h5>
+            <p class="card-text">25. 7. 2025 ob 17:00<br>Kratek opis dogodka.</p>
+            <a href="index.html" class="btn btn-light">Prijavi se sedaj</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="slike/fleet.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Koncert Fleetwood Mac</h5>
+            <p class="card-text">1. 8. 2025 ob 10:00<br>Kratek opis dogodka.</p>
+            <a href="index.html" class="btn btn-light">Prijavi se sedaj</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="slike/Franz.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Koncert Franz Ferdinand</h5>
+            <p class="card-text">15. 8. 2025 ob 18:00<br>Kratek opis dogodka.</p>
+            <a href="index.html" class="btn btn-light">Prijavi se sedaj</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <p> Naslov: abc 31r | Kontakt: gapisubic@gmail.com | <a href="#">Social Media</a></p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
